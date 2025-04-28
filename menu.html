@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню | GRILL BAR TRAVA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <header>
+    <div class="container">
+        <div class="header-content">
+            <div class="logo-block">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="GRILL BAR TRAVA" class="logo-img">
+                </a>
+                <div class="logo-text">
+                    <h1>GRILL BAR & TRAVA</h1>
+                    <p class="logo-subtitle">Green Land</p>
+                </div>
+            </div>
+
+            <div class="cart-icon">
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div class="container">
+        <div class="category-tabs">
+            <button class="tab-btn active" data-category="all">Все</button>
+            <button class="tab-btn" data-category="горячие-блюда">Горячие блюда</button>
+            <button class="tab-btn" data-category="первые-блюда">Первые блюда</button>
+            <button class="tab-btn" data-category="гарниры">Гарниры</button>
+            <button class="tab-btn" data-category="стейки">Стейки</button>
+            <button class="tab-btn" data-category="мясо-на-гриле">Мясо на гриле</button>
+            <button class="tab-btn" data-category="колбаски">Колбаски</button>
+            <button class="tab-btn" data-category="салаты">Салаты</button>
+            <button class="tab-btn" data-category="закуски">Закуски</button>
+            <button class="tab-btn" data-category="напитки">Напитки</button>
+        </div>
+<div id="notification" class="notification"></div>
+
+        <div id="menu-items" class="menu-grid">
+            <!-- Меню будет загружено из JS -->
+        </div>
+    </div>
+
+    <script src="js/menu.js"></script>
+</body>
+</html>

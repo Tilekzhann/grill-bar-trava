@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина | GRILL BAR TRAVA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-block">
+                    <a href="index.html">
+                        <img src="assets/logo.png" alt="GRILL BAR TRAVA" class="logo-img">
+                    </a>
+                    <div class="logo-text">
+                        <h1>GRILL BAR TRAVA</h1>
+                        <p class="logo-subtitle">Green Land</p>
+                    </div>
+                </div>
+                <div class="cart-icon">
+                    <a href="menu.html">
+                        <i class="fa-solid fa-utensils"></i>
+                        <span>Меню</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="cart-container">
+            <h2>Ваш заказ</h2>
+            
+            <div id="cart-items">
+                <!-- Товары будут добавлены из JS -->
+                <div class="empty-cart">Корзина пуста</div>
+            </div>
+            
+            <div class="cart-summary">
+                <div class="summary-row">
+                    <span>Сумма заказа:</span>
+                    <span id="subtotal">0 ₸</span>
+                </div>
+                <div class="summary-row">
+                    <span>Обслуживание (10%):</span>
+                    <span id="service-fee">0 ₸</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Итого к оплате:</span>
+                    <span id="total">0 ₸</span>
+                </div>
+            </div>
+            
+            <div class="cart-buttons">
+                <a href="#" id="whatsapp-order" class="btn-primary">✅ Оформить заказ</a>
+                <a href="menu.html" class="btn-secondary">⬅ Вернуться в меню</a>
+                <button id="clear-cart" class="btn-warning">🗑 Очистить корзину</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/cart.js"></script>
+</body>
+</html>
