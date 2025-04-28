@@ -100,7 +100,7 @@ function sendOrderToWhatsApp(event) {
     message += `\nОбслуживание (10%): ${serviceFee.toFixed(0)} ₸`;
     message += `\nИтого к оплате: ${total.toFixed(0)} ₸`;
 
-    const phone = "77001234567"; // <-- СЮДА ВСТАВЬ СВОЙ НОМЕР без плюса
+    const phone = "77718198080"; // <-- СЮДА ВСТАВЬ СВОЙ НОМЕР без плюса
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
     window.open(url, "_blank");
