@@ -75,6 +75,13 @@ const menuItems = [
     { id: 52, name: "Мороженое ассорти", price: 2500, image: "assets/ice-cream.png", category: "десерты" }
 ];
 
+function getCart() {
+    return JSON.parse(localStorage.getItem("cart")) || [];
+}
+
+function saveCart(cart) {
+    localStorage.setItem("cart", JSON.stringify(cart));
+}
 
 // Рендеринг всех блюд
 function renderMenuItems(category = "all") {
