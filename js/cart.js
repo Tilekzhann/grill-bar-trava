@@ -128,10 +128,12 @@ function sendOrderToWhatsApp(event) {
     let message = "Здравствуйте! Хочу оформить заказ:\n\n";
 
     cart.forEach(item => {
-        message += `• ${item.name} — ${item.price} ₸\n`;
+        const qty = item.quantity || 1;
+        const itemTotal = item.price * qty;
+        message += `• ${item.name} × ${qty} — ${itemTotal} ₸\n`;
     });
 
-    const subtotal = cart.reduce((sum, item) => sum + item.price, 0);
+    const subtotal = cart.reduce((sum, item) => sum + item.price * (item.quantity || 1), 0);
     const serviceFee = subtotal * 0.10;
     const total = subtotal + serviceFee;
 
@@ -139,7 +141,7 @@ function sendOrderToWhatsApp(event) {
     message += `\nОбслуживание (10%): ${serviceFee.toFixed(0)} ₸`;
     message += `\nИтого к оплате: ${total.toFixed(0)} ₸`;
 
-    const phone = "77718198080"; // <-- СЮДА ВСТАВЬ СВОЙ НОМЕР без плюса
+    const phone = "77718198080"; // <-- Твой номер без плюса
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
     window.open(url, "_blank");
