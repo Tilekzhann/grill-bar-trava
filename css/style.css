@@ -49,10 +49,7 @@ body {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
-.logo-img {
-    max-width: 120px;
-    margin-bottom: 20px;
-}
+
 body.home-page {
     background: linear-gradient(145deg, #1c1c1c, #2a2a2a);
 }
@@ -207,11 +204,24 @@ header {
 .btn-warning:hover {
     background-color: var(--accent-color);
 }
-
 .logo-img {
-    height: 150px;
-    margin-right: 10px;
+    max-width: 120px;
+    margin-bottom: 20px;
+    border-radius: 20px; /* ← скругление углов */
 }
+.insta-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.insta-link i {
+  margin-right: 8px;
+}
+
 .green-land {
     font-size: 1.2rem;
     color: var(--primary-color);
