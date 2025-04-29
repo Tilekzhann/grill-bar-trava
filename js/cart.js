@@ -1,6 +1,22 @@
-function showCustomConfirm() {
-  document.getElementById('customConfirm').style.display = 'block';
+function clearCart() {
+  const modal = document.getElementById("confirm-modal");
+  modal.classList.remove("hidden");
+
+  const okBtn = document.getElementById("confirm-ok");
+  const cancelBtn = document.getElementById("confirm-cancel");
+
+  okBtn.onclick = () => {
+    localStorage.removeItem("cart");
+    renderCart();
+    updateCartCount();
+    modal.classList.add("hidden");
+  };
+
+  cancelBtn.onclick = () => {
+    modal.classList.add("hidden");
+  };
 }
+
 
 function closeConfirm() {
   document.getElementById('customConfirm').style.display = 'none';
