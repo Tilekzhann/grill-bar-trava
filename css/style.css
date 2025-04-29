@@ -357,40 +357,63 @@ header {
     align-items: center;
     padding: 15px
 }
-.modal-actions {
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #222;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+}
+
+.modal-content {
+  text-align: center;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.modal-buttons {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   gap: 15px;
 }
 
-.modal-actions .btn-primary,
-.modal-actions .btn-secondary {
-  padding: 10px 25px;
-  font-size: 1rem;
-  border-radius: 6px;
-  cursor: pointer;
+.btn-confirm,
+.btn-cancel {
+  padding: 8px 18px;
   border: none;
+  border-radius: 6px;
   font-weight: 600;
-  transition: background 0.3s ease;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.modal-actions .btn-primary {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+.btn-confirm {
+  background-color: #d4af37;
+  color: #111;
 }
 
-.modal-actions .btn-primary:hover {
-  background-color: var(--accent-color);
-}
-
-.modal-actions .btn-secondary {
-  background-color: #444;
+.btn-cancel {
+  background-color: #555;
   color: white;
 }
 
-.modal-actions .btn-secondary:hover {
-  background-color: #666;
+.btn-confirm:hover {
+  background-color: #b9962f;
 }
+
+.btn-cancel:hover {
+  background-color: #777;
+}
+
+.hidden {
+  display: none;
+}
+
 
 /* Анимация градиента */
 @keyframes gradientMove {
