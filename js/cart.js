@@ -59,21 +59,24 @@ function renderCart() {
     cart.forEach((item, index) => {
         subtotal += item.price;
 
-        const cartItem = document.createElement("div");
-        cartItem.classList.add("cart-item");
+       const cartItem = document.createElement("div");
+cartItem.classList.add("cart-item");
 
-        cartItem.innerHTML = `
-            <div class="item-image" style="width:80px;height:80px;">
-                <img src="${item.image}" alt="${item.name}" style="width:100%;height:100%;object-fit:cover;">
-            </div>
-            <div class="item-details" style="flex:1;margin-left:15px;">
-                <div class="item-name">${item.name}</div>
-                <div class="item-price">${item.price} ₸</div>
-            </div>
-            <button class="remove-btn" onclick="removeFromCart(${index})">
-                <i class="fa-solid fa-trash"></i>
-            </button>
-        `;
+cartItem.innerHTML = `
+    <div class="cart-card">
+        <div class="cart-image">
+            <img src="${item.image}" alt="${item.name}">
+        </div>
+        <div class="cart-info">
+            <div class="cart-name">${item.name}</div>
+            <div class="cart-price">${item.price} ₸</div>
+        </div>
+        <button class="cart-remove" onclick="removeFromCart(${index})">
+            <i class="fa-solid fa-trash"></i>
+        </button>
+    </div>
+`;
+
 
         cartItemsContainer.appendChild(cartItem);
     });
