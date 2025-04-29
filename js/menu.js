@@ -430,7 +430,277 @@ const menuItems = [
     price: 32000,
     category: "гриль"
 },
+// Fast Food
 
+{
+    id: 44,
+    name: "Пицца Пепперони",
+    description: "Классическая пицца с пепперони и сыром",
+    price: 3250,
+    category: "fastfood"
+},
+{
+    id: 45,
+    name: "Пицца Маргарита",
+    description: "Пицца с томатным соусом, сыром моцарелла и базиликом",
+    price: 3250,
+    category: "fastfood"
+},
+{
+    id: 46,
+    name: "Пицца Болоньезе",
+    description: "Пицца с мясным соусом болоньезе и сыром",
+    price: 3250,
+    category: "fastfood"
+},
+{
+    id: 47,
+    name: "Пицца Курица с грибами",
+    description: "Пицца с куриным филе, грибами и сыром",
+    price: 3250,
+    category: "fastfood"
+},
+{
+    id: 48,
+    name: "Пицца 4 сезона",
+    description: "Пицца с четырьмя видами начинок",
+    price: 3250,
+    category: "fastfood"
+},
+{
+    id: 49,
+    name: "Хачапури",
+    description: "Классический хачапури",
+    price: 3250,
+    category: "fastfood"
+},
+{
+    id: 50,
+    name: "Куриный бургер",
+    description: "Бургер с куриной котлетой и свежими овощами",
+    price: 2450,
+    category: "fastfood"
+},
+{
+    id: 51,
+    name: "Говяжий бургер",
+    description: "Бургер с сочной говяжьей котлетой",
+    price: 2750,
+    category: "fastfood"
+},
+{
+    id: 52,
+    name: "Куриные крылья в панировке (8 шт)",
+    description: "Хрустящие куриные крылья в панировке",
+    price: 2450,
+    category: "fastfood"
+},
+{
+    id: 53,
+    name: "Наггетсы (6 шт)",
+    description: "Куриные наггетсы в хрустящей панировке",
+    price: 2200,
+    category: "fastfood"
+},
+{
+    id: 54,
+    name: "Сырные палочки (6 шт)",
+    description: "Жареные палочки из моцареллы в панировке",
+    price: 2800,
+    category: "fastfood"
+},
+{
+    id: 55,
+    name: "Гренки",
+    description: "Хрустящие чесночные гренки",
+    price: 1300,
+    category: "закуски"
+},
+// Продолжение menuItems
+
+// Закуски
+{
+    id: 56,
+    name: "Мясное ассорти",
+    description: "Қазы, жая, язык, сыр",
+    price: 9250,
+    category: "закуски"
+},
+{
+    id: 57,
+    name: "Рыбное ассорти",
+    description: "Семга, белорыбица, лимон, тарталетки с икрой",
+    price: 9250,
+    category: "закуски"
+},
+{
+    id: 58,
+    name: "Куриное ассорти",
+    description: "Голень, крылышки, ножки, куриный рулет",
+    price: 7250,
+    category: "закуски"
+},
+{
+    id: 59,
+    name: "Овощное ассорти",
+    description: "Помидоры, огурцы, болгарский перец, брынза, зелень",
+    price: 3250,
+    category: "закуски"
+},
+{
+    id: 60,
+    name: "Закуска по-русски",
+    description: "Селедка, маринованные огурцы, яйцо, картофельные дольки, лук, лимон",
+    price: 3550,
+    category: "закуски"
+},
+{
+    id: 61,
+    name: "Ассорти разносолов",
+    description: "Маринованные помидоры, корнишоны, грибы, патиссоны",
+    price: 3550,
+    category: "закуски"
+},
+
+// Соусы и хлеб
+{
+    id: 62,
+    name: "Кетчуп",
+    description: "",
+    price: 350,
+    category: "соусы-и-хлеб"
+},
+{
+    id: 63,
+    name: "BBQ",
+    description: "",
+    price: 350,
+    category: "соусы-и-хлеб"
+},
+{
+    id: 64,
+    name: "Сырный соус",
+    description: "",
+    price: 350,
+    category: "соусы-и-хлеб"
+},
+{
+    id: 65,
+    name: "Тар-тар соус",
+    description: "",
+    price: 350,
+    category: "соусы-и-хлеб"
+},
+{
+    id: 66,
+    name: "Хлебная корзина",
+    description: "",
+    price: 850,
+    category: "соусы-и-хлеб"
+},
+{
+    id: 67,
+    name: "Баурсаки (10 шт)",
+    description: "",
+    price: 700,
+    category: "соусы-и-хлеб"
+},
+{
+    id: 68,
+    name: "Самса (10 шт)",
+    description: "",
+    price: 3500,
+    category: "соусы-и-хлеб"
+},
+
+// Предзаказ
+{
+    id: 69,
+    name: "Бешбармак ассорти на 5–6 человек",
+    description: "",
+    price: 25000,
+    category: "предзаказ"
+},
+{
+    id: 70,
+    name: "Плов на 5–6 человек",
+    description: "",
+    price: 20000,
+    category: "предзаказ"
+},
+{
+    id: 71,
+    name: "Куырдак на 5–6 человек",
+    description: "",
+    price: 23000,
+    category: "предзаказ"
+},
+{
+    id: 72,
+    name: "Курица с овощами на 5–6 человек (гарнир на выбор)",
+    description: "",
+    price: 20000,
+    category: "предзаказ"
+},
+// Продолжение menuItems
+
+// Прочее
+{
+    id: 73,
+    name: "Медовик",
+    description: "",
+    price: 1500,
+    category: "прочее"
+},
+{
+    id: 74,
+    name: "Наполеон",
+    description: "",
+    price: 1500,
+    category: "прочее"
+},
+{
+    id: 75,
+    name: "Орехи солёные",
+    description: "",
+    price: 1500,
+    category: "прочее"
+},
+{
+    id: 76,
+    name: "Фисташки",
+    description: "",
+    price: 2500,
+    category: "прочее"
+},
+{
+    id: 77,
+    name: "Чипсы",
+    description: "",
+    price: 800,
+    category: "прочее"
+},
+{
+    id: 78,
+    name: "Жевательная резинка",
+    description: "",
+    price: 350,
+    category: "прочее"
+},
+{
+    id: 79,
+    name: "Сигареты электронные",
+    description: "",
+    price: 1500,
+    category: "прочее"
+},
+{
+    id: 80,
+    name: "Сигареты в ассортименте",
+    description: "",
+    price: 1500,
+    category: "прочее"
+},
 ];
 
 function getCart() {
