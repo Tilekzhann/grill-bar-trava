@@ -58,11 +58,8 @@ function renderCart() {
         const cartItem = document.createElement("div");
         cartItem.classList.add("cart-item");
 
-       cartItem.innerHTML = `
-    <div class="item-image">
-        <img src="${item.image}" alt="${item.name}">
-    </div>
-    <div class="item-details">
+      cartItem.innerHTML = `
+    <div class="item-details" style="flex:1;margin-left:15px;">
         <div class="item-name">${item.name}</div>
         <div class="item-price">${item.price} ₸</div>
     </div>
