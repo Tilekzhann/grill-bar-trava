@@ -22,10 +22,6 @@ function closeConfirm() {
   document.getElementById('customConfirm').style.display = 'none';
 }
 
-function confirmClear() {
-  clearCart(); // твоя функция очистки
-  closeConfirm();
-}
 // Получаем корзину
 function getCart() {
     return JSON.parse(localStorage.getItem("cart")) || [];
@@ -59,22 +55,20 @@ function renderCart() {
     cart.forEach((item, index) => {
         subtotal += item.price;
 
-       const cartItem = document.createElement("div");
-cartItem.classList.add("cart-item");
+        const cartItem = document.createElement("div");
+        cartItem.classList.add("cart-item");
 
-cartItem.innerHTML = `
-    <div class="cart-card">
-        <div class="cart-image">
-            <img src="${item.image}" alt="${item.name}">
-        </div>
-        <div class="cart-info">
-            <div class="cart-name">${item.name}</div>
-            <div class="cart-price">${item.price} ₸</div>
-        </div>
-        <button class="cart-remove" onclick="removeFromCart(${index})">
-            <i class="fa-solid fa-trash"></i>
-        </button>
+       cartItem.innerHTML = `
+    <div class="item-image">
+        <img src="${item.image}" alt="${item.name}">
     </div>
+    <div class="item-details">
+        <div class="item-name">${item.name}</div>
+        <div class="item-price">${item.price} ₸</div>
+    </div>
+    <button class="remove-btn" onclick="removeFromCart(${index})">
+        <i class="fa-solid fa-trash"></i>
+    </button>
 `;
 
 
