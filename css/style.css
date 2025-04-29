@@ -162,25 +162,29 @@ header {
     margin: 8px 0;
 }
 
+.item-controls {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: auto; /* выровнять вправо */
+}
+
 .qty-btn {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     border: none;
-    padding: 4px 12px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border-radius: 5px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    padding: 4px 8px;
     cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.qty-btn:hover {
-    background-color: var(--accent-color);
+    transition: background-color 0.3s ease;
 }
 
 .qty-count {
-    font-weight: bold;
-    font-size: 1.1rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    min-width: 20px;
+    text-align: center;
 }
 
 

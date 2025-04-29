@@ -59,16 +59,19 @@ subtotal += item.price * (item.quantity || 1);
         cartItem.classList.add("cart-item");
 
      cartItem.innerHTML = `
-    <div class="item-details" style="flex:1;margin-left:15px;">
-        <div class="item-name">${item.name}</div>
+    <div style="display: flex; align-items: center; width: 100%;">
+        <div class="item-details" style="flex:1;">
+            <div class="item-name">${item.name}</div>
+            <div class="item-price">${(item.price * (item.quantity || 1)).toFixed(0)} ₸</div>
+        </div>
         <div class="item-controls">
             <button class="qty-btn" onclick="decreaseQty(${index})">−</button>
             <span class="qty-count">${item.quantity || 1}</span>
             <button class="qty-btn" onclick="increaseQty(${index})">+</button>
         </div>
-        <div class="item-price">${(item.price * (item.quantity || 1)).toFixed(0)} ₸</div>
     </div>
 `;
+
 
 
         cartItemsContainer.appendChild(cartItem);
