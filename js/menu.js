@@ -628,7 +628,7 @@ const menuItems = [
     id: 89,
     name: "Черный чай",
     description: "",
-    price: 1500,
+    price: 950,
     category: "бар"
 },
 {
@@ -640,13 +640,20 @@ const menuItems = [
 },
 {
     id: 91,
+    name: "Чай с молоком",
+    description: "",
+    price: 1150,
+    category: "бар"
+},
+{
+    id: 92,
     name: "Пиво разливное Carslberg",
     description: "",
     price: 1400,
     category: "бар"
 },
 {
-    id: 92,
+    id: 93,
     name: "Пиво разливное Zatecky gus",
     description: "",
     price: 1000,
