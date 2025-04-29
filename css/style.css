@@ -273,22 +273,8 @@ header {
     transform: translateY(-5px);
 }
 
-.item-image {
-    height: 180px;
-    width: 100%;
-    background-color: #333;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.item-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+
 
 .item-details {
     padding: 15px;
@@ -365,13 +351,13 @@ header {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.cart-item .item-image {
+.cart-item {
     width: 80px;
     height: 80px;
     flex-shrink: 0;
 }
 
-.cart-item .item-image img {
+.cart-item {
     width: 100%;
     height: 100%;
     object-fit: cover;
