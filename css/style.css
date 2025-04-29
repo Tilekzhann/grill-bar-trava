@@ -264,9 +264,13 @@ header {
 .menu-item {
     background-color: var(--card-bg);
     border-radius: 8px;
-    overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    padding: 20px 15px; /* вместо .item-details */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .menu-item:hover {
@@ -277,7 +281,7 @@ header {
 
 
 .item-details {
-    padding: 15px;
+    padding: 0px;
 }
 
 .item-name {

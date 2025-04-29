@@ -78,19 +78,19 @@ function renderMenuItems(category = "all") {
         const card = document.createElement("div");
         card.classList.add("menu-item");
 
-        card.innerHTML = `
-    <div class="item-image">
-        <img src="${item.image}" alt="${item.name}">
-    </div>
+      card.innerHTML = `
     <div class="item-details">
         <div class="item-name">${item.name}</div>
+        <div class="item-description">${item.description || ""}</div>
         <div class="item-price-row">
             <div class="item-price">${item.price} ₸</div>
-            <button class="add-to-cart" onclick="addToCart(${item.id}, event)"><i class="fa-solid fa-plus"></i>
-                    </button>
-                </div>
-            </div>
-        `;
+            <button class="add-to-cart" onclick="addToCart(${item.id})">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>
+    </div>
+`;
+
 
         container.appendChild(card);
     });
