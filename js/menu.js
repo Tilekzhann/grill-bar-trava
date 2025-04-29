@@ -181,7 +181,7 @@ const menuItems = [
     description: "",
     price: 1250,
     category: "горячие-блюда"
-}
+},
 // Горячие блюда (Паста + Гарниры тоже здесь)
 
 {
@@ -299,7 +299,7 @@ const menuItems = [
     description: "",
     price: 1250,
     category: "горячие-блюда"
-}
+},
 ];
 
 function getCart() {
