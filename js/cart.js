@@ -69,12 +69,24 @@ function removeFromCart(index) {
 
 // Очистить корзину
 function clearCart() {
-    if (confirm("Вы уверены, что хотите очистить корзину?")) {
-        localStorage.removeItem("cart");
-        renderCart();
-        updateCartCount();
-    }
+  const modal = document.getElementById("confirm-modal");
+  modal.classList.remove("hidden");
+
+  const okBtn = document.getElementById("confirm-ok");
+  const cancelBtn = document.getElementById("confirm-cancel");
+
+  okBtn.onclick = () => {
+    localStorage.removeItem("cart");
+    renderCart();
+    updateCartCount();
+    modal.classList.add("hidden");
+  };
+
+  cancelBtn.onclick = () => {
+    modal.classList.add("hidden");
+  };
 }
+
 
 // Отправка заказа в WhatsApp
 function sendOrderToWhatsApp(event) {

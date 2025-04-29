@@ -352,6 +352,40 @@ header {
     color: var(--primary-color);
     font-size: 1.8rem;
 }
+.modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 25px 30px;
+  max-width: 350px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  color: #fff;
+}
+
+.modal-content p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
 
 .cart-item {
     display: flex;
