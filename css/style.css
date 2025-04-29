@@ -155,6 +155,34 @@ header {
     text-decoration: none;
     transition: all 0.3s ease;
 }
+.item-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0;
+}
+
+.qty-btn {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 4px 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.qty-btn:hover {
+    background-color: var(--accent-color);
+}
+
+.qty-count {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
 
 .btn-secondary {
     background-color: #333;

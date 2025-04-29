@@ -148,6 +148,21 @@ function showNotification(message) {
         }, 400);
     }, 2000); // уведомление исчезнет через 2 секунды
 }
+function addToCart(id) {
+    const product = menuItems.find(item => item.id === id);
+    const cart = getCart();
+
+    const existing = cart.find(item => item.id === id);
+    if (existing) {
+        existing.quantity = (existing.quantity || 1) + 1;
+    } else {
+        cart.push({ ...product, quantity: 1 });
+    }
+
+    saveCart(cart);
+    updateCartCount();
+    showNotification(`${product.name} добавлено в корзину!`);
+}
 
 // Первичная загрузка
 document.addEventListener("DOMContentLoaded", () => {

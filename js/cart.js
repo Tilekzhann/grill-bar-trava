@@ -53,19 +53,21 @@ function renderCart() {
     let subtotal = 0;
 
     cart.forEach((item, index) => {
-        subtotal += item.price;
+subtotal += item.price * (item.quantity || 1);
 
         const cartItem = document.createElement("div");
         cartItem.classList.add("cart-item");
 
-      cartItem.innerHTML = `
+     cartItem.innerHTML = `
     <div class="item-details" style="flex:1;margin-left:15px;">
         <div class="item-name">${item.name}</div>
-        <div class="item-price">${item.price} ₸</div>
+        <div class="item-controls">
+            <button class="qty-btn" onclick="decreaseQty(${index})">−</button>
+            <span class="qty-count">${item.quantity || 1}</span>
+            <button class="qty-btn" onclick="increaseQty(${index})">+</button>
+        </div>
+        <div class="item-price">${(item.price * (item.quantity || 1)).toFixed(0)} ₸</div>
     </div>
-    <button class="remove-btn" onclick="removeFromCart(${index})">
-        <i class="fa-solid fa-trash"></i>
-    </button>
 `;
 
 
@@ -147,6 +149,25 @@ function updateCartCount() {
     if (cartCountElem) {
         cartCountElem.textContent = cart.length;
     }
+}
+function increaseQty(index) {
+    const cart = getCart();
+    cart[index].quantity = (cart[index].quantity || 1) + 1;
+    saveCart(cart);
+    renderCart();
+    updateCartCount();
+}
+
+function decreaseQty(index) {
+    const cart = getCart();
+    if ((cart[index].quantity || 1) > 1) {
+        cart[index].quantity -= 1;
+    } else {
+        cart.splice(index, 1); // Удалить, если 0
+    }
+    saveCart(cart);
+    renderCart();
+    updateCartCount();
 }
 
 // Запуск при загрузке
