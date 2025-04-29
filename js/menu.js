@@ -659,6 +659,20 @@ const menuItems = [
     price: 1000,
     category: "бар"
 },
+{
+    id: 94,
+    name: "Колбаски из конины",
+    description: "Домашние колбаски из конины",
+    price: 3950,
+    category: "гриль"
+},
+{
+    id: 95,
+    name: "Колбаски из курицы",
+    description: "Домашние колбаски из курицы",
+    price: 3950,
+    category: "гриль"
+},
 ];
 
 function getCart() {
