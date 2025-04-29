@@ -183,125 +183,6 @@ const menuItems = [
     category: "горячие-блюда"
 },
 // Горячие блюда (Паста + Гарниры тоже здесь)
-
-{
-    id: 10,
-    name: "Бефстроганов",
-    description: "Говяжья вырезка, лук, корнишон, гарнир пюре",
-    price: 3450,
-    category: "горячие-блюда"
-},
-{
-    id: 11,
-    name: "Курица в кисло-сладком соусе с рисом",
-    description: "Курица, крахмал, свит-чили, гарнир рис",
-    price: 3150,
-    category: "горячие-блюда"
-},
-{
-    id: 12,
-    name: "Куриный шницель",
-    description: "Куриная отбивная, панировочные сухари, гарнир пюре",
-    price: 3150,
-    category: "горячие-блюда"
-},
-{
-    id: 13,
-    name: "Телятина в азиатском стиле",
-    description: "Телятина, помидоры, огурцы, болгарский перец, кунжут, гарнир рис",
-    price: 3850,
-    category: "горячие-блюда"
-},
-{
-    id: 14,
-    name: "Wok с курицей",
-    description: "Курица, фунчоза, болгарский перец, морковь, лук, соевый соус, свит-чили",
-    price: 2850,
-    category: "горячие-блюда"
-},
-{
-    id: 15,
-    name: "Wok с говядиной",
-    description: "Говядина, фунчоза, болгарский перец, морковь, лук, соевый соус, свит-чили",
-    price: 2950,
-    category: "горячие-блюда"
-},
-{
-    id: 16,
-    name: "Wok с креветками",
-    description: "Креветки, фунчоза, болгарский перец, морковь, лук, соевый соус, свит-чили",
-    price: 2950,
-    category: "горячие-блюда"
-},
-
-// Паста
-{
-    id: 17,
-    name: "Паста Альфредо",
-    description: "",
-    price: 2850,
-    category: "горячие-блюда"
-},
-{
-    id: 18,
-    name: "Паста Карбонара",
-    description: "",
-    price: 2850,
-    category: "горячие-блюда"
-},
-{
-    id: 19,
-    name: "Паста с морепродуктами",
-    description: "",
-    price: 3150,
-    category: "горячие-блюда"
-},
-
-// Гарниры
-{
-    id: 20,
-    name: "Рис",
-    description: "",
-    price: 750,
-    category: "горячие-блюда"
-},
-{
-    id: 21,
-    name: "Картофельное пюре",
-    description: "",
-    price: 850,
-    category: "горячие-блюда"
-},
-{
-    id: 22,
-    name: "Картофель фри",
-    description: "Подается с кетчупом",
-    price: 1050,
-    category: "горячие-блюда"
-},
-{
-    id: 23,
-    name: "Картофельные дольки",
-    description: "Подается с кетчупом",
-    price: 1250,
-    category: "горячие-блюда"
-},
-{
-    id: 24,
-    name: "Овощи гриль",
-    description: "",
-    price: 1550,
-    category: "горячие-блюда"
-},
-{
-    id: 25,
-    name: "Шампиньоны на гриле",
-    description: "",
-    price: 1250,
-    category: "горячие-блюда"
-},
-// Первые блюда
-
 {
     id: 26,
     name: "Том Ям",
@@ -362,9 +243,9 @@ const menuItems = [
 },
 {
     id: 34,
-    name: "Колбаски гриль",
+    name: "Ассорти колбасок",
     description: "Ассорти колбасок, приготовленных на гриле",
-    price: 3950,
+    price: 13950,
     category: "гриль"
 },
 {
@@ -436,35 +317,35 @@ const menuItems = [
     id: 44,
     name: "Пицца Пепперони",
     description: "Классическая пицца с пепперони и сыром",
-    price: 3250,
+    price: 3150,
     category: "fastfood"
 },
 {
     id: 45,
     name: "Пицца Маргарита",
     description: "Пицца с томатным соусом, сыром моцарелла и базиликом",
-    price: 3250,
+    price: 2850,
     category: "fastfood"
 },
 {
     id: 46,
     name: "Пицца Болоньезе",
     description: "Пицца с мясным соусом болоньезе и сыром",
-    price: 3250,
+    price: 3450,
     category: "fastfood"
 },
 {
     id: 47,
     name: "Пицца Курица с грибами",
     description: "Пицца с куриным филе, грибами и сыром",
-    price: 3250,
+    price: 3450,
     category: "fastfood"
 },
 {
     id: 48,
     name: "Пицца 4 сезона",
     description: "Пицца с четырьмя видами начинок",
-    price: 3250,
+    price: 3450,
     category: "fastfood"
 },
 {
@@ -508,13 +389,6 @@ const menuItems = [
     description: "Жареные палочки из моцареллы в панировке",
     price: 2800,
     category: "fastfood"
-},
-{
-    id: 55,
-    name: "Гренки",
-    description: "Хрустящие чесночные гренки",
-    price: 1300,
-    category: "закуски"
 },
 // Продолжение menuItems
 
@@ -637,7 +511,7 @@ const menuItems = [
 },
 {
     id: 72,
-    name: "Курица с овощами на 5–6 человек (гарнир на выбор)",
+    name: "Курица с овощами в сливочном соусе на 5–6 человек (гарнир на выбор)",
     description: "",
     price: 20000,
     category: "предзаказ"
@@ -650,14 +524,14 @@ const menuItems = [
     name: "Медовик",
     description: "",
     price: 1500,
-    category: "прочее"
+    category: "бар"
 },
 {
     id: 74,
     name: "Наполеон",
     description: "",
     price: 1500,
-    category: "прочее"
+    category: "бар"
 },
 {
     id: 75,
@@ -701,6 +575,77 @@ const menuItems = [
     price: 1500,
     category: "прочее"
 },
+{
+    id: 81,
+    name: "Лимонад клубничный",
+    description: "",
+    price: 2500,
+    category: "бар"
+},
+{
+    id: 82,
+    name: "Лимонад мохито/клубничный",
+    description: "",
+    price: 2500,
+    category: "бар"
+},
+{
+    id: 83,
+    name: "Лимонад ягодный",
+    description: "",
+    price: 2500,
+    category: "бар"
+},
+{
+    id: 84,
+    name: "Coca-Cola, Sprite 0.25",
+    description: "",
+    price: 700,
+    category: "бар"
+},
+{
+    id: 85,
+    name: "Coca-Cola, Sprite 0.5",
+    description: "",
+    price: 850,
+    category: "бар"
+},
+{
+    id: 86,
+    name: "Натуральный сок 1л",
+    description: "",
+    price: 1200,
+    category: "бар"
+},
+{
+    id: 87,
+    name: "Ташкентский чай",
+    description: "",
+    price: 1500,
+    category: "бар"
+},
+{
+    id: 88,
+    name: "Ягодный чай",
+    description: "",
+    price: 1500,
+    category: "бар"
+},
+{
+    id: 89,
+    name: "Черный чай",
+    description: "",
+    price: 1500,
+    category: "бар"
+},
+{
+    id: 90,
+    name: "Зеленый чай",
+    description: "",
+    price: 1500,
+    category: "бар"
+},
+
 ];
 
 function getCart() {
