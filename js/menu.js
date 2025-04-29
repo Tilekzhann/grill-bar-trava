@@ -102,15 +102,14 @@ function renderMenuItems(category = "all") {
         card.classList.add("menu-item");
 
         card.innerHTML = `
-            <div class="item-image">
-                <img src="${item.image}" alt="${item.name}">
-            </div>
-            <div class="item-details">
-                <div class="item-name">${item.name}</div>
-                <div class="item-price-row">
-                    <div class="item-price">${item.price} ₸</div>
-                    <button class="add-to-cart" onclick="addToCart(${item.id})">
-                        <i class="fa-solid fa-plus"></i>
+    <div class="item-image">
+        <img src="${item.image}" alt="${item.name}">
+    </div>
+    <div class="item-details">
+        <div class="item-name">${item.name}</div>
+        <div class="item-price-row">
+            <div class="item-price">${item.price} ₸</div>
+            <button class="add-to-cart" onclick="addToCart(${item.id}, event)"><i class="fa-solid fa-plus"></i>
                     </button>
                 </div>
             </div>
