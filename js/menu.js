@@ -645,7 +645,20 @@ const menuItems = [
     price: 1500,
     category: "бар"
 },
-
+{
+    id: 91,
+    name: "Пиво разливное Carslberg",
+    description: "",
+    price: 1400,
+    category: "бар"
+},
+{
+    id: 92,
+    name: "Пиво разливное Zatecky gus",
+    description: "",
+    price: 1000,
+    category: "бар"
+},
 ];
 
 function getCart() {
