@@ -210,7 +210,9 @@ header {
     margin-bottom: 20px;
     border-radius: 20px; /* скруглённые углы */
 }
-
+.menu-page .logo-img {
+    height: 80px;
+}
 .insta-link {
   display: inline-block;
   margin-top: 20px;
