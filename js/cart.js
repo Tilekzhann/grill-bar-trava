@@ -1,3 +1,15 @@
+function showCustomConfirm() {
+  document.getElementById('customConfirm').style.display = 'block';
+}
+
+function closeConfirm() {
+  document.getElementById('customConfirm').style.display = 'none';
+}
+
+function confirmClear() {
+  clearCart(); // твоя функция очистки
+  closeConfirm();
+}
 // Получаем корзину
 function getCart() {
     return JSON.parse(localStorage.getItem("cart")) || [];
