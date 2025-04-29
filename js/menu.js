@@ -163,6 +163,23 @@ function addToCart(id) {
     updateCartCount();
     showNotification(`${product.name} добавлено в корзину!`);
 }
+// Показать кнопку при прокрутке
+window.addEventListener('scroll', () => {
+    const btn = document.getElementById('scrollTopBtn');
+    if (window.scrollY > 300) {
+        btn.style.display = 'block';
+    } else {
+        btn.style.display = 'none';
+    }
+});
+
+// При клике — плавная прокрутка наверх
+document.getElementById('scrollTopBtn').addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
 
 // Первичная загрузка
 document.addEventListener("DOMContentLoaded", () => {

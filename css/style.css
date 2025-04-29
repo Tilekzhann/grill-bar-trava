@@ -502,6 +502,25 @@ header {
   display: none;
 }
 
+.scroll-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    display: none; /* скрыта по умолчанию */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 999;
+}
+
+.scroll-top-btn:hover {
+    background-color: var(--accent-color);
+}
 
 /* Анимация градиента */
 @keyframes gradientMove {
