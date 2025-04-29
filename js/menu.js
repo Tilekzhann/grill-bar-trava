@@ -114,14 +114,15 @@ function renderMenuItems(category = "all") {
 }
 
 // Добавление товара в корзину
-function addToCart(product, event) {
+function addToCart(id, event) {
+    const product = menuItems.find(item => item.id === id);
     const cart = getCart();
     cart.push(product);
     saveCart(cart);
     updateCartCount();
     showNotification(`${product.name} добавлено в корзину!`);
 
-    // Найдём карточку
+    // Анимация карточки
     const button = event.target;
     const card = button.closest('.menu-item');
     if (card) {
