@@ -205,10 +205,12 @@ header {
     background-color: var(--accent-color);
 }
 .logo-img {
-    max-width: 120px;
+    width: 180px; /* увеличенный размер */
+    height: auto;
     margin-bottom: 20px;
-    border-radius: 20px; /* ← скругление углов */
+    border-radius: 20px; /* скруглённые углы */
 }
+
 .insta-link {
   display: inline-block;
   margin-top: 20px;
