@@ -402,20 +402,18 @@ header {
 .add-to-cart {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    border: none;
-    border-radius: 5px;
     width: 36px;
     height: 36px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: var(--transition);
 }
 
 .add-to-cart:hover {
-    background-color: var(--accent-color);
+    background-color: var(--primary-hover);
+    transform: scale(1.1);
 }
 
 /* Корзина */
