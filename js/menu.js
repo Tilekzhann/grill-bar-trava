@@ -516,35 +516,35 @@ const menuItems = [
     id: 73,
     name: "Медовик",
     description: "",
-    price: 1500,
-    category: "бар"
+    price: 1000,
+    category: "десерты"
 },
 {
     id: 74,
     name: "Наполеон",
     description: "",
-    price: 1500,
-    category: "бар"
+    price: 1000,
+    category: "десерты"
 },
 {
     id: 75,
     name: "Орехи солёные",
     description: "",
-    price: 1500,
+    price: 800,
     category: "прочее"
 },
 {
     id: 76,
     name: "Фисташки",
     description: "",
-    price: 2500,
+    price: 1200,
     category: "прочее"
 },
 {
     id: 77,
     name: "Чипсы",
     description: "",
-    price: 800,
+    price: 1200,
     category: "прочее"
 },
 {
@@ -555,17 +555,10 @@ const menuItems = [
     category: "прочее"
 },
 {
-    id: 79,
-    name: "Сигареты электронные",
-    description: "",
-    price: 1500,
-    category: "прочее"
-},
-{
     id: 80,
     name: "Сигареты в ассортименте",
     description: "",
-    price: 1500,
+    price: 1700,
     category: "прочее"
 },
 {
@@ -672,6 +665,19 @@ const menuItems = [
     description: "Домашние колбаски из курицы",
     price: 3950,
     category: "гриль"
+},
+{
+    id: 96,
+    name: "Мороженое",
+    description: "Самое лучшее в жаркий день",
+    price: 750,
+    category: "десерты"
+},
+{
+    id: 97,
+    name: "Чизкейк",md
+    price: 1350,
+    category: "десерты"
 },
 ];
 
