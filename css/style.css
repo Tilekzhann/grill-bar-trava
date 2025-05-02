@@ -277,12 +277,24 @@ header {
 
 /* Категории меню */
 .category-tabs {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 30px 0;
+    position: relative;
+    padding: 12px 24px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    z-index: 1;
 }
-
+/* Анимация при клике */
+.category-tabs:active {
+    transform: translateY(1px) scale(0.98);
+}
 .tab-btn {
     background-color: var(--card-bg);
     color: var(--text-color);
