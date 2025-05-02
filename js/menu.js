@@ -680,6 +680,13 @@ const menuItems = [
 	price: 1350,
     category: "десерты"
 },
+{
+    id: 98,
+    name: "Фруктовая нарезка",
+    description: "",
+	price: 4950,
+    category: "десерты"
+},
 ];
 
 function getCart() {
