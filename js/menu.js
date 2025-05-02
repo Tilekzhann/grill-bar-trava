@@ -676,7 +676,8 @@ const menuItems = [
 {
     id: 97,
     name: "Чизкейк",md
-    price: 1350,
+    description: "",
+	price: 1350,
     category: "десерты"
 },
 ];
