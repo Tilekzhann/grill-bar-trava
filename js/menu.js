@@ -1,8 +1,4 @@
 // Массив всех блюд
-const savedMenu = localStorage.getItem('menuItems');
-if (savedMenu) {
-    menuItems = JSON.parse(savedMenu);
-}
 const menuItems = [
     // Салаты
 {
