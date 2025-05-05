@@ -649,7 +649,7 @@ const menuItems = [
     id: 93,
     name: "Пиво разливное Zatecky gus",
     description: "",
-    price: 1000,
+    price: 1200,
     category: "бар"
 },
 {
@@ -686,6 +686,20 @@ const menuItems = [
     description: "",
 	price: 4950,
     category: "десерты"
+},
+{
+    id: 99,
+    name: "CocaCola",
+    description: "1 л.",
+	price: 1200,
+    category: "бар"
+},
+{
+    id: 100,
+    name: "Картофель фри",
+    description: "Подается с кетчупом",
+    price: 1050,
+    category: "fastfood"
 },
 ];
 
